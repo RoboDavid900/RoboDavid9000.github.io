@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Final David Echeverria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <h1>Votación del más fuerte</h1>
+        <input type="text" placeholder="Search" class="search">
+        <button id="loginBtn" onclick="toggleLogin()">Login</button>
+    </header>
+
+    <main class="container">
+        <section class="left">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Goku</h2>
+                    <p><em>El Legendario Super Sayayin</em></p>
+                </div>
+                <p class="definition">
+                    Cuenta con el ultra instinto, y su conocimiento en artes marciales y habilidades 
+                    como el kamehameha y la genkidama lo hacen de temer.
+                </p>
+
+                <img src="goku.jpg" alt="Goku" class="character-img">
+
+                <button class="like-btn" onclick="addLike(0)">1034 likes</button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>Vegeta</h2>
+                    <p><em>El príncipe de los sayayins</em></p>
+                </div>
+                <p class="definition">
+                    Cuenta con el ultra ego, además de ser del tipo de peleador que juega con sus oponentes, 
+                    nunca se deja confiar, lo que hace que sea impredecible y tiene el uso del poderoso hakai.
+                </p>
+
+                <img src="vegeta.jpg" alt="Vegeta" class="character-img">
+
+                <button class="like-btn" onclick="addLike(1)">1028 likes</button>
+            </div>
+        </section>
+
+        <aside class="right">
+            <div class="definition-box">
+                <h3>Dale click al botón de abajo para recibir las noticias más recientes de la votación.</h3>
+                <button class="add-btn" onclick="removeAddBtn(this)">Notificame</button>
+            </div>
+
+            <div class="broly-section">
+                <img src="broly.jpg" alt="Broly" class="vertical-img">
+                <p class="broly-text">
+                    Broly, el Saiyajin legendario. Su poder incontrolable lo convierte en una amenaza incluso para Goku y Vegeta, esten atentos y activen las notificaciones para no perderse del otro combate de votaciones, Broly vs Gogeta!.
+                </p>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
